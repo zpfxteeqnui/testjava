@@ -1,29 +1,17 @@
 package com.jtr;
 
-class User
-{
 
-    public  String userName;
-
-    public  static  int gold;
-}
-
-public class jicheng {
+public class jicheng1 {
 
     public static  void  main (String[] args)
     {
-        System.out.println(User.gold);
+        //代码块
+        {
+            int a = 88;
+            System.out.println(a);
+        }
 
-        User user = new User();
-        String name = user.userName;
-        int count = user.gold;
-
-        System.out.println(name+"---"+count);
-
-        user.userName="zpf";
-        user.gold=110;
-
-        System.out.println(user.userName+"---"+user.gold);
+        //System.out.println(a);
     }
 
 }

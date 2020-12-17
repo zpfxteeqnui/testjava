@@ -14,5 +14,6 @@ public class fordemo4 {
  }
 
         System.out.println(sum);
+        System.out.println("test");
 }
 }

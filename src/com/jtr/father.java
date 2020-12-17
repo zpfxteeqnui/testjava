@@ -11,6 +11,7 @@ public class father {
     }
 }
 
+/*
 public  class  demochild extends  father
 {
     public String work;
@@ -21,3 +22,4 @@ public  class  demochild extends  father
         this.work=strwork;
     }
 }
+*/

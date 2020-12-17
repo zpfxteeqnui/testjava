@@ -1,20 +1,20 @@
 package com.jtr;
 
-public class demo8 {
+public class demo9 {
 
     public static void main(String[] args) {
-        int[] arr = {10, 20,30, 40,50};
 
-        for (int min=0, max=arr.length-1;min<max;min++,max--)
-        {
-            int temp=arr[min];
-            arr[min]=arr[max];
-            arr[max]=temp;
-        }
+      String[][] str  = new String[3][];
 
-        for (int ar : arr)
-        {
-            System.out.println(ar);
-        }
+        str[0]=new String[]{"糖"};
+        str[1]=new String[]{"菜"};
+        str[2]=new String[]{"玩"};
+
+        Person p = new Person("zpf");
+        //System.out.println(p);
+
+        String s = p.getUserName();
+        System.out.println(s);
+
     }
 }

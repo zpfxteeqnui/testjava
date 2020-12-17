@@ -1,26 +1,31 @@
 package com.jtr;
 
-class  Animal{
+class  Animal2{
     public  double weight;
     public void  sayHello(){
         System.out.println("我是一个动特：我重："+weight);
     }
+    public  void  bark(){
+        System.out.println("父，咬");
+    }
 }
 
-class  Banban extends  Animal
+class  Dog extends  Animal2
 {
     public  void  sayHello(){
         System.out.println("我是banban"+this.weight);
     }
+    public  void  bark(){
+        System.out.println("狗，咬");
+    }
 }
 
-public class demo10 extends  Animal {
+public class demo11 extends  Animal2{
 
     public  static  void  main(String[] args)
     {
-        Animal a = new Banban();
-        a.weight=200.0;
-        a.sayHello();
+        Dog d = new Dog();
+        d.bark();
     }
 
 }

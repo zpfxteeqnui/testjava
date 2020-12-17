@@ -1,10 +1,15 @@
 package com.jtr;
 
-public class demo {
+public class demo3 {
     public  static  void  main (String[] args)
     {
-        System.out.println("test");
+        int[] nums=new int[]{18,11,23,556,34};
 
-        System.out.println("test push");
+        String[] names=new String[]{"a","b","c "};
+
+        for (int num :nums)
+        {
+            System.out.println(num);
+        }
     }
 }

@@ -1,35 +1,20 @@
 package com.jtr;
 
-public class demo7 {
+public class demo8 {
 
-    public  static  void  main (String[] args) {
-    int[] arr = {12, 33, 23, 2, 45, 31, 66, 77};
+    public static void main(String[] args) {
+        int[] arr = {10, 20,30, 40,50};
 
-    int max = arr[0];
-    int min = arr[0];
-    int temp=0;
-
-    for(int i=1;i<arr.length;i++)
-    {
-        temp=arr[i];
-        if(max < temp)
+        for (int min=0, max=arr.length-1;min<max;min++,max--)
         {
-            max=temp;
+            int temp=arr[min];
+            arr[min]=arr[max];
+            arr[max]=temp;
+        }
+
+        for (int ar : arr)
+        {
+            System.out.println(ar);
         }
     }
-
-        System.out.println("最大的："+max);
-
-    for (int i=1;i<arr.length;i++)
-    {
-        temp=arr[i];
-
-        if(min>temp)
-        {
-            min=temp;
-        }
-    }
-
-        System.out.println("最小值："+min);
-}
 }
